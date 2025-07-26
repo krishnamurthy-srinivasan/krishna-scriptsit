@@ -8,10 +8,12 @@ import Skills from './components/Skills';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import ThemeToggle from './components/ThemeToggle';
+import BackgroundAnimation from './components/BackgroundAnimation';
 
 function App() {
   return (
-    <div className="bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-sans scroll-smooth">
+    <div className="relative bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-sans scroll-smooth">
+      <BackgroundAnimation />
       <Navbar />
       <Hero />
       <About />
