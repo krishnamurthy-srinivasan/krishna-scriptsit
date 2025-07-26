@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bitcount: ["'Bitcount Prop Single'", ...fontFamily.sans],
+        sans: ["'Roboto Mono'", ...fontFamily.sans],
       },
       keyframes: {
         'fade-in': {

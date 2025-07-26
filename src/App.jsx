@@ -1,5 +1,6 @@
 // src/App.jsx
 import React from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -10,18 +11,17 @@ import ThemeToggle from './components/ThemeToggle';
 
 function App() {
   return (
-    <div className="bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-bitcount">
+    <div className="bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-sans scroll-smooth">
+      <Navbar />
       <Hero />
       <About />
       <Projects />
       <Skills />
       <Blog />
       <Contact />
-      <ThemeToggle /> 
+      <ThemeToggle />
     </div>
   );
 }
 
 export default App;
-
-// Tailwind + dark mode layout will be configured in tailwind.config.js
