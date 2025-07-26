@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import ThemeToggle from './components/ThemeToggle';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Skills />
       <Blog />
       <Contact />
+      <ThemeToggle />
     </div>
   );
 }
