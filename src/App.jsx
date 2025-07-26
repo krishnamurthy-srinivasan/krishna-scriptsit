@@ -9,11 +9,13 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import ThemeToggle from './components/ThemeToggle';
 import BackgroundAnimation from './components/BackgroundAnimation';
+import StarfieldDemo from './components/StarfieldDemo';
 
 function App() {
   return (
     <div className="relative bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-sans scroll-smooth">
-      <BackgroundAnimation />
+      {/* <BackgroundAnimation /> */}
+      <StarfieldDemo />
       <Navbar />
       <Hero />
       <About />
