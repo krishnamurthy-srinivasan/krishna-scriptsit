@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-white/80 dark:bg-[#121212]/80 backdrop-blur-md shadow z-50">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <span className="text-xl font-bold tracking-wide">Krishna.dev</span>
+        <span className="text-xl font-bold tracking-wide">Krishna</span>
         <ul className="hidden md:flex gap-6 text-sm font-medium">
           {navItems.map((item, idx) => (
             <li key={idx}>
