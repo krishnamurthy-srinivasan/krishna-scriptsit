@@ -36,12 +36,14 @@ const Hero = () => {
         className="flex-1 flex items-center justify-center"
       >
         <div className="relative w-64 h-64">
-          <div className="absolute inset-0 rounded-full border-4 border-green-400 animate-spin-slow shadow-[0_0_12px_#00ff80,0_0_24px_#00ff80] z-0"></div>
-          <img 
-            src={profilePic} 
-            alt="Krishna Murthy" 
-            className="w-full h-full object-cover rounded-full relative z-10"
-          />
+            <div className="absolute inset-0 rounded-full z-0">
+                <div className="w-full h-full rounded-full border-4 border-transparent animate-spin-slow bg-gradient-to-r from-transparent via-green-400 to-transparent bg-[length:200%_200%] bg-no-repeat shadow-[0_0_12px_#00ff80,0_0_24px_#00ff80]"></div>
+            </div>
+            <img
+                src={profilePic}
+                alt="Krishna Murthy"
+                className="w-full h-full object-cover rounded-full relative z-10"
+            />
         </div>
       </motion.div>
     </section>
