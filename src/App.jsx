@@ -17,7 +17,7 @@ function App() {
       <Skills />
       <Blog />
       <Contact />
-      <ThemeToggle />
+      <ThemeToggle /> 
     </div>
   );
 }
