@@ -35,9 +35,8 @@ const Hero = () => {
         transition={{ duration: 1.2 }}
         className="flex-1 flex items-center justify-center"
       >
-        <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-xl">
-          <div className="absolute inset-0 rounded-full border-4 border-yellow-400 animate-spin-slow"></div>
-          <div className="absolute inset-2 rounded-full border-2 border-yellow-300 animate-pulse border-dashed"></div>
+        <div className="relative w-64 h-64">
+          <div className="absolute inset-0 rounded-full border-4 border-green-400 animate-spin-slow shadow-[0_0_12px_#00ff80,0_0_24px_#00ff80] z-0"></div>
           <img 
             src={profilePic} 
             alt="Krishna Murthy" 

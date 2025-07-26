@@ -20,6 +20,7 @@ export default {
       },
       animation: {
         'fade-in': 'fade-in 1.5s ease-in-out forwards',
+        'spin-slow': 'spin 6s linear infinite',
       }
     },
   },

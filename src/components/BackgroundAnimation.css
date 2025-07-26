@@ -1,0 +1,20 @@
+/* src/components/BackgroundAnimation.css */
+.starfield {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(#ccc 1px, transparent 1px);
+  background-size: 3px 3px;
+  animation: starScroll 60s linear infinite;
+  opacity: 0.1;
+  filter: brightness(0.9);
+}
+
+@keyframes starScroll {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
