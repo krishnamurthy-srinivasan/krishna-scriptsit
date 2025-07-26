@@ -1,34 +1,28 @@
-/* src/components/BackgroundAnimation.css */
-.starfield {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: black;
-  overflow: hidden;
-  z-index: -10;
+.starfield-wrapper {
+  background-color: transparent;
 }
 
-.starfield::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
+.stars {
   width: 300%;
   height: 300%;
   background-image: 
     radial-gradient(white 1px, transparent 1px),
     radial-gradient(white 1px, transparent 1px);
-  background-size: 4px 4px, 6px 6px;
-  background-position: 0 0, 100px 100px;
-  animation: moveStars 100s linear infinite;
-  opacity: 0.1;
+  background-size: 3px 3px, 6px 6px;
+  background-position: 0 0, 50px 50px;
+  animation: starfieldScroll 90s linear infinite;
+  opacity: 0.08;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  z-index: -1;
 }
 
-@keyframes moveStars {
-  0% {
+@keyframes starfieldScroll {
+  from {
     transform: translate(0, 0);
   }
-  100% {
+  to {
     transform: translate(50%, 50%);
   }
 }

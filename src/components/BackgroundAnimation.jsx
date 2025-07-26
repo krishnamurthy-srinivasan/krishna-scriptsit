@@ -4,8 +4,8 @@ import './BackgroundAnimation.css';
 
 const BackgroundAnimation = () => {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden">
-      <div className="starfield"></div>
+    <div className="starfield-wrapper fixed inset-0 -z-10 overflow-hidden">
+      <div className="stars"></div>
     </div>
   );
 };
