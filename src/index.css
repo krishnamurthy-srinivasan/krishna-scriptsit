@@ -1,11 +1,11 @@
 /* index.css */
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Bitcount Prop Single', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   @apply bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100;
   transition: background-color 0.3s ease;
 }
