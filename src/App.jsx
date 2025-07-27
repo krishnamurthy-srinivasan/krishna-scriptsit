@@ -8,8 +8,7 @@ import Skills from './components/Skills';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import ThemeToggle from './components/ThemeToggle';
-import BackgroundAnimation from './components/BackgroundAnimation';
-import StarfieldDemo from './components/StarfieldDemo';
+import AnimatedGradientBackground from './components/AnimatedGradientBackground';
 
 function App() {
   return (    
@@ -35,7 +34,7 @@ function App() {
         `}</style>
       </div>
       {/* <BackgroundAnimation /> */}
-      <StarfieldDemo />
+      <AnimatedGradientBackground />
       <Navbar />
       <Hero />
       <About />
