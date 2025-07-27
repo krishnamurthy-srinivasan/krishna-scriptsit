@@ -1,26 +1,28 @@
 
-.gradient-bg {
-  background: linear-gradient(270deg, #f0f0f0, #e5e5e5, #ffffff);
-  background-size: 600% 600%;
-  animation: gradientLight 30s ease infinite;
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  background: radial-gradient(circle at 30% 30%, #f0f0f0, #ffffff, #eaeaea);
+  animation: shiftLight 30s ease-in-out infinite;
 }
 
 @media (prefers-color-scheme: dark) {
-  .gradient-bg {
-    background: linear-gradient(270deg, #3a3a3a, #2a2a2a, #1a1a1a, #0f0f0f);
-    background-size: 600% 600%;
-    animation: gradientDark 30s ease infinite;
+  .animated-bg {
+    background: radial-gradient(circle at 30% 30%, #2f2f2f, #1a1a1a, #000000);
+    animation: shiftDark 30s ease-in-out infinite;
   }
 }
 
-@keyframes gradientLight {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes shiftLight {
+  0%   { background-position: 30% 30%; }
+  50%  { background-position: 70% 70%; }
+  100% { background-position: 30% 30%; }
 }
 
-@keyframes gradientDark {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes shiftDark {
+  0%   { background-position: 20% 20%; }
+  50%  { background-position: 80% 80%; }
+  100% { background-position: 20% 20%; }
 }
